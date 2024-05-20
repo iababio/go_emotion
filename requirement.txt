@@ -1,6 +1,6 @@
-transformers
 streamlit
 torch
+transformers
 trl 
 peft 
 accelerate 
