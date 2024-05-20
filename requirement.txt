@@ -1,0 +1,7 @@
+streamlit
+torch
+transformers
+trl 
+peft 
+accelerate 
+bitsandbytes
