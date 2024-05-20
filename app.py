@@ -7,7 +7,7 @@ import torch
 @st.cache(allow_output_mutation=True)
 def get_model():
     tokenizer = AutoTokenizer.from_pretrained("ababio/Llama_3_8b_it_go_emotion")
-    model = pipeline("ababio/Llama_3_8b_it_go_emotion")
+    model = pipeline("text-generation", model="ababio/Llama_3_8b_it_go_emotion")
     return tokenizer, model
 
 
