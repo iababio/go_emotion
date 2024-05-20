@@ -1,16 +1,17 @@
 import streamlit as st
 import numpy as np
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer, pipeline
+
 import torch
 
 @st.cache(allow_output_mutation=True)
 def get_model():
     tokenizer = AutoTokenizer.from_pretrained("ababio/Llama_3_8b_it_go_emotion")
-    model = AutoModelForCausalLM.from_pretrained("ababio/Llama_3_8b_it_go_emotion")
-    return tokenizer,model
+    model = pipeline("ababio/Llama_3_8b_it_go_emotion")
+    return tokenizer, model
 
 
-tokenizer,model = get_model()
+tokenizer, model = get_model()
 
 user_input = st.text_area('Enter Text to Analyze')
 button = st.button("Analyze")
