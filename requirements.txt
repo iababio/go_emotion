@@ -5,3 +5,8 @@ trl
 peft 
 accelerate 
 bitsandbytes
+requests
+
+pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+
+pip install --no-deps "xformers<0.0.26" trl peft accelerate bitsandbytes nltk plotly streamlit
