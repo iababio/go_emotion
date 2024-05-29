@@ -10,9 +10,10 @@ pinned: false
 license: mit
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
+Check Inference End-Point at https://huggingface.co/spaces/ababio/Go_Emotions_Inference
 
 
-![Emotion Inference](image/1.png)
 ![Emotion Inference](image/2.png)
+![Emotion Inference](image/1.png)
 ![Emotion Inference](image/3.png)
